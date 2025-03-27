@@ -6,6 +6,8 @@ int main() {
     //Prof: Sergio
     //Curso ADS
 
+    //Variáveis nivel novato
+
     char estado1, estado2;
     char codcarta1[20], codcarta2[20];
     char cidade1[20], cidade2[20];
@@ -13,6 +15,11 @@ int main() {
     float area1, area2;
     float pib1, pib2;
     int p1, p2;
+
+    //Variáveis nivel aventureiro
+;
+    float dp1, dp2;
+    float ppc1, ppc2;
 
     printf("Olá, Bem vindo ao nosso desafio Super Trunfo! \n"); //Apresentação do jogo
 
@@ -88,6 +95,12 @@ int main() {
     printf("PIB da cidade: %.2f\n", pib1);
     printf("Pontos turísticos: %d\n", p1);
 
+    dp1 = populacao1 / area1;
+    ppc1 = pib1 / populacao1;
+    printf("A densidade populacional: %.2f hab/km²\n", dp1);
+    printf("PIB Per Capita: %.2f reais\n", ppc1);
+
+
     // Exibindo os dados cadastrados da carta 2
     printf("\nDados cadastrados:\n");
     printf("CARTA 2 - \n");
@@ -98,7 +111,14 @@ int main() {
     printf("Área: %.2fkm²\n", area2);
     printf("PIB: %.2f\n", pib2);
     printf("Pontos turísticos: %d\n", p2);
-    printf("Pontos turísticos: %d\n", p2);
+
+    dp2 = populacao2 / area2;
+    ppc2 = pib2 / populacao2;
+    printf("Densidade populacional: %.2f hab/km²\n", dp2);
+    printf("PIB Per Capirta: %.2f reais\n", ppc2);
+    
+
+    
 
 
     return 0;
