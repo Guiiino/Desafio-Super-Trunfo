@@ -17,7 +17,7 @@ int main() {
     int p1, p2;
 
     //Variáveis nivel aventureiro
-;
+
     float dp1, dp2;
     float ppc1, ppc2;
 
@@ -95,7 +95,7 @@ int main() {
     printf("PIB da cidade: %.2f\n", pib1);
     printf("Pontos turísticos: %d\n", p1);
 
-    dp1 = populacao1 / area1;
+    dp1 = populacao1 / area1; //Aqui temos a parte do nivel aventureiro
     ppc1 = pib1 / populacao1;
     printf("A densidade populacional: %.2f hab/km²\n", dp1);
     printf("PIB Per Capita: %.2f reais\n", ppc1);
@@ -112,12 +112,13 @@ int main() {
     printf("PIB: %.2f\n", pib2);
     printf("Pontos turísticos: %d\n", p2);
 
-    dp2 = populacao2 / area2;
+    dp2 = populacao2 / area2; //Aqui temos a parte do nivel aventureiro
     ppc2 = pib2 / populacao2;
     printf("Densidade populacional: %.2f hab/km²\n", dp2);
     printf("PIB Per Capirta: %.2f reais\n", ppc2);
     
 
+    
     
 
 
