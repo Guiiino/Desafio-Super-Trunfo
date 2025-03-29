@@ -11,7 +11,7 @@ int main() {
     char estado1, estado2;
     char codcarta1[20], codcarta2[20];
     char cidade1[20], cidade2[20];
-    int populacao1, populacao2;
+    int populacao1, populacao2; 
     float area1, area2;
     float pib1, pib2;
     int p1, p2;
@@ -95,7 +95,7 @@ int main() {
     printf("PIB da cidade: %.2f\n", pib1);
     printf("Pontos turísticos: %d\n", p1);
 
-    dp1 = populacao1 / area1; //Aqui temos a parte do nivel aventureiro
+    dp1 = populacao1 / area1; //Aqui temos a parte do nivel aventureiro da primeira carta
     ppc1 = pib1 / populacao1;
     printf("A densidade populacional: %.2f hab/km²\n", dp1);
     printf("PIB Per Capita: %.2f reais\n", ppc1);
@@ -112,14 +112,22 @@ int main() {
     printf("PIB: %.2f\n", pib2);
     printf("Pontos turísticos: %d\n", p2);
 
-    dp2 = populacao2 / area2; //Aqui temos a parte do nivel aventureiro
+    dp2 = populacao2 / area2; //Aqui temos a parte do nivel aventureiro da segunda carta
     ppc2 = pib2 / populacao2;
     printf("Densidade populacional: %.2f hab/km²\n", dp2);
-    printf("PIB Per Capirta: %.2f reais\n", ppc2);
+    printf("PIB Per Capita: %.2f reais\n", ppc2);
+
+    //Vamos agora com o o tema 2 que é a comparação de um atributo das cartas
+    
+    printf("\nAgora segue a carta vencedora levando em consideração o atributo (pontos turísticos): \n");
+
+    if (p1 > p2 ) {
+        printf("A carta vencedora é a Carta 1!");
+    } else {
+        printf("A carta vencedora é a Carta 2");
+    }
     
 
-    
-    
 
 
     return 0;
